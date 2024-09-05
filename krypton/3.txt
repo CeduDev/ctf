@@ -1,0 +1,13 @@
+find / -type f -name "krypton3"
+cd /krypton/krypton2/
+mktemp -d && cd <dir>
+ln -s /krypton/krypton2/keyfile.dat && ls -la && chmod 777 .
+/krypton/krypton2/encrypt /etc/issue && cat ciphertext
+
+Cipher text is: AYCQYPGQCYQW, plaintext is UBUNTULTSNL
+
+Find out here: https://cryptii.com/pipes/caesar-cipher, that the encoder uses a 12-right shift
+
+/krypton/krypton2/encrypt /etc/krypton_pass/krypton3 && cat ciphertext
+
+Cipher text is: OMQEMDUEQMEK, password is CAESARISEASY

@@ -1,0 +1,17 @@
+cd /krypton/krypton3
+
+for i in {A..Z}; do cat found1 found2 found3 | tr -cd $i | wc -c | tr -d '\n'; printf " $i \n"; done | sort -nr | cut -d ' ' -f 2 | tr -d '\n'
+
+Cipher text: SQJUBNGCDZVWMYTXKELAFIORHP
+English Alphabet frequency list: ETAOINSRHDLUCMFYWGPBVKXQJZ
+
+cat krypton4 | tr 'SQJUBNGCDZVWMYTXKELAFIORHP' 'ETAOINSRHDLUCMFYWGPBVKXQJZ'
+
+Gives: WELLU ISEAH ELEKE LYICN MTOOW INURO BNCAE 
+
+Change order to: cat krypton4 | tr 'SQJUBNGCDZVWMYTXKELAFIORHP' 'EATSORNIHCLDUPYFWGMBKVXQJZ'
+
+Gives:
+WELLD ONETH ELEVE LFOUR PASSW ORDIS BRUTE
+=
+Well done. The level four password is BRUTE

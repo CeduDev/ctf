@@ -1,0 +1,18 @@
+cd /krypton/krypton5
+
+Go to https://www.dcode.fr/vigenere-cipher?__r=1.85eba2f7410e1124aba7dfbbb9ab8780
+
+Put in found1-3, and set Vigenere Cryptanalysis
+
+You'll see that the keylength is 3
+
+Put in found1, and set key length to 3
+
+found1: LEY
+found2: KEYLENGTH
+found3: LEY
+
+LEY + krypto4 = QANDO B
+KEYLENGTH + krypto4 = RANDO M
+
+PASSWORD is: RANDOM

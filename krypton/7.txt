@@ -1,0 +1,29 @@
+mktemp -d && cd <dir>
+ln -s /krypton/krypton6/keyfile.dat && ls -la && chmod 777 .
+
+Testing with 50 As:
+python3 -c 'print("A" * 50)' > aa.txt
+touch bb.txt && /krypton/krypton6/encrypt6 ./aa.txt ./bb.txt
+echo "EICTDGYIYZKTHNSIRFXYCPFUEOCKRN" | wc --m
+Period: 30, so key length 30
+
+Testing with 50 Bs:
+python3 -c 'print("B" * 50)' > aa.txt
+touch bb.txt && /krypton/krypton6/encrypt6 ./aa.txt ./bb.txt
+echo "FJDUEHZJZALUIOTJSGYZDQGVFPDLSO" | wc --m
+Period: 30, so key length 30, 
+only take the 30 first characters of above = FJDUEHZJZALUIOTJ
+
+python
+ord(b) - ord(a) for a,b in zip('BBBBBBBBBBBBBBBB', 'FJDUEHZJZALUIOTJ')]
+Gives: [4, 8, 2, 19, 3, 6, 24, 8, 24, -1, 10, 19, 7, 13, 18, 8]
+
+Then, do cat krypto7
+python
+''.join([chr(ord(b) - a) for a,b in zip([4, 8, 2, 19, 3, 6, 24, 8, 24, -1, 10, 19, 7, 13, 18, 8], 'PNUKLYLWRQKGKBE')])
+Gives: 'LFS8IS4O:RA4D53'
+
+not quite right, so try this: 
+
+''.join([chr(ord(b) - a) for a,b in zip([4, 8, 2, -7, 3, 6, -2, 8, -2, -1, 10, -7, 7, -13, -8], 'PNUKLYLWRQKGKBE')])
+Gives: 'LFSRISNOTRANDOM'
