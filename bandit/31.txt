@@ -1,0 +1,9 @@
+mkdir /tmp/abbajeejee && cd /tmp/abbajeejee
+
+git clone ssh://bandit28-git@localhost:2220/home/bandit28-git/repo
+
+enter password for bandit28
+
+git tag
+
+git show <tag>

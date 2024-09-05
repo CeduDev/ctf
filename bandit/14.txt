@@ -1,0 +1,5 @@
+ssh -p 2220 -i ./sshkey.private bandit14@bandit.labs.overthewire.org
+
+cd /etc/bandit_pass && ls -la
+
+cat bandit14

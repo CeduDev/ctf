@@ -1,0 +1,17 @@
+mktemp -d && cd <dir>
+
+nano a.sh
+
+enter this into a.sh:
+
+#!/bin/bash
+echo "Time to check all pin codes..."
+for i in {7000..8000};
+do
+	/home/leviathan6/leviathan6 $i
+done
+
+chmod 777 a.sh
+./a.sh
+
+cat /etc/leviathan_pass/leviathan7

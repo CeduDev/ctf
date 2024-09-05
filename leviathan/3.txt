@@ -1,0 +1,22 @@
+ls -la
+
+./printfile /etc/leviathan_pass/leviathan3
+
+./printfile .bash_logout 
+
+ltrace ./printfile .bash_logout
+
+ltrace ./printfile .bash_logout .profile 
+
+mktemp -d
+
+touch <dir>/"test file.txt"
+ls -la <dir>
+
+ltrace ./printfile <dir>/"test file.txt"
+
+ln -s /etc/leviathan_pass/leviathan3 <dir>/test
+
+ls -la <dir> && chmod <dir>
+
+./printfile <dir>/"test file.txt"

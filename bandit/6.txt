@@ -1,0 +1,5 @@
+find / -type f -iname bandit7.password
+
+then use the filename:
+
+cat /var/lib/dpkg/info/bandit7.password

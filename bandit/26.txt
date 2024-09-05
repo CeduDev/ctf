@@ -1,0 +1,8 @@
+make terminal window super small
+
+ssh -p 2220 -i bandit26.sshkey bandit26@localhost
+
+Press v, and type :set shell=/bin/bash.
+Then type :shell
+
+cat /etc/bandit_pass/bandit26

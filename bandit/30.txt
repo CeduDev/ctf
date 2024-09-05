@@ -1,0 +1,7 @@
+mkdir /tmp/abbajeejee && cd /tmp/abbajeejee
+
+git clone ssh://bandit29-git@localhost:2220/home/bandit29-git/repo
+
+enter password for bandit29
+
+git log -p

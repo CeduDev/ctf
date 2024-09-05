@@ -1,0 +1,9 @@
+head data.txt
+
+mkdir /tmp/abba123jeejee && cd /tmp/abba123jeejee && cp ~/data.txt . && mv data.txt data && xxd -r data > binary && file binary
+
+repeatedly do this depending on output UNTIL IT SAYS "ASCII text":
+
+1. gzip compressed data: mv <file> <file>.gz && gunzip <file>.gz && file <file>.out
+2. bzip2 compressed data: bunzip2 <file> && file <file>.out
+3. POSSIX tar archive (GNU): tar -xf <file> && rm <file> && ls

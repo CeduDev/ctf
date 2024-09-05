@@ -1,0 +1,3 @@
+ncat --ssl localhost 30001
+
+then instert password

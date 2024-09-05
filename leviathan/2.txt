@@ -1,0 +1,11 @@
+strings check
+
+ltrace ./check
+
+then insert whatever, then you can see the password in the strcmp()-function
+
+./check
+
+and insert sex
+
+cat /etc/leviathan_pass/leviathan2

@@ -1,0 +1,10 @@
+./level3
+enter anything
+
+ltrace ./level3
+enter anything, and see the passcode
+
+./level3
+enter snlprintf
+
+cat /etc/leviathan_pass/leviathan4

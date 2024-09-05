@@ -1,0 +1,12 @@
+mkdir /tmp/abbajeejee && cd /tmp/abbajeejee
+
+git clone ssh://bandit31-git@localhost:2220/home/bandit31-git/repo
+
+enter password for bandit31
+
+git log -p
+echo "May I come in?" >> key.txt
+
+git add -f key.txt && git commit -m "add key.txt" && git push
+
+enter password for bandit 32

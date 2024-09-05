@@ -1,0 +1,9 @@
+./leviathan5
+
+echo "hello world" >> /tmp/file.log
+
+./leviathan5
+
+ls -s /etc/leviathan_pass/leviathan6 /tmp/file.log
+
+./leviathan5

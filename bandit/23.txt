@@ -1,0 +1,9 @@
+cd /etc/cron.d/ && ls
+
+cat cronjob_bandit23
+
+cat /usr/bin/cronjob_bandit23.sh
+
+inspect the script, then run echo I am user bandit23 | md5sum | cut -d ' ' -f 1
+
+cat /tmp/8ca319486bfbbc3663ea0fbe81326349

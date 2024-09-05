@@ -1,0 +1,14 @@
+nmap -Pn --script ssl-enum-ciphers -p 31000-32000 --open localhost
+
+look at which ports show TLSv1.2
+
+for each port:
+  ncat --ssl localhost
+  then insert password
+  stop when given the RSA-private key
+
+exit
+
+make new key-file in this root
+
+ssh -p 2220 -i ./17-key.pem bandit17@bandit.labs.overthewire.org

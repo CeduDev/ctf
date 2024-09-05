@@ -1,0 +1,7 @@
+cd /etc/cron.d/ && ls
+
+cat cronjob_bandit22
+
+cd /usr/bin && ls -la | grep cron
+
+cat <full path shown>
