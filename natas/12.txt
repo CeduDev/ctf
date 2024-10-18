@@ -1,0 +1,9 @@
+you need to use a webshell for this (this guide explains it: https://learnhacking.io/overthewire-natas-level-12-walkthrough/)
+
+select he file "12.php"
+
+open the dev tools, and change the value on the form from <random_string>.jpg to <random_string>.php
+
+click upload, and click the uploaded file link
+
+paste the following after the URL: ?e=cat%20/etc/natas_webpass/natas13

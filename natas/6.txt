@@ -1,0 +1,3 @@
+go to http://natas6.natas.labs.overthewire.org/includes/secret.inc
+
+copy the secret FOEIUWGHFEEUHOFUOIU, and go back to root and insert the secret
